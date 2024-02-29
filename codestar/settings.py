@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-cue^+^rd0el4$(sdwx3&r@^5kn9#_o$$vdc8k$i^mf(n+n9(l8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://vm5qkj1v-8000.uks1.devtunnels.ms/blog/', '.herokuapp.com', 'http://127.0.0.1:8000/', '127.0.0.1', 'localhost',  'https://blog-app-graciete-94fe55f6b7e6.herokuapp.com/']
+ALLOWED_HOSTS = ['https://vm5qkj1v-8000.uks1.devtunnels.ms/blog/', '.herokuapp.com', 'http://127.0.0.1:8000/', '127.0.0.1', 'localhost',  'https://blog-app-graciete-94fe55f6b7e6.herokuapp.com/', 'https://api.elephantsql.com/console/a4786c43-188d-4cd2-84a3-0e9ba2102719/details?app=kxyzzhvb']
 
 
 # Application definition
