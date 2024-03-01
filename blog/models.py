@@ -18,6 +18,15 @@ class Post(models.Model):
 
     class Meta:
         ordering = ["-created_on"]
+        
+    def soft_delete(self):
+        self.deleted = True
+        self.save()
+
+    def restore(self):
+        self.deleted = False
+        self.save()
+   
 
     def __str__(self):
         return f"{self.title} | written by {self.author}"  
@@ -30,6 +39,7 @@ class Comment(models.Model):
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
+    
     
     class Meta:
         ordering = ["created_on"]
