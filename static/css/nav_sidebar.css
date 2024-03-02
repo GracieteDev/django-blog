@@ -39,7 +39,7 @@
     border-top: 1px solid transparent;
     border-right: 1px solid var(--hairline-color);
     background-color: var(--body-bg);
-    overflow: auto;
+    overflow-wrap: break-word;
 }
 
 [dir="rtl"] #nav-sidebar {
@@ -74,7 +74,8 @@
 
 #nav-sidebar .module th {
     width: 100%;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+
 }
 
 #nav-sidebar .module th,
