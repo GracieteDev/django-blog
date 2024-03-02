@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '1eHZsO9VQHSKoWzRD0gueeM9tUFD2mat'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['https://vm5qkj1v-8000.uks1.devtunnels.ms/' '*.herokuapp.com', 'http://127.0.0.1:8000/', '127.0.0.1', 'localhost', 'https://api.elephantsql.com/console/a4786c43-188d-4cd2-84a3-0e9ba2102719/details?app=kxyzzhvb', 'https://django-blog-graciete-857dfa1c1f7a.herokuapp.com/']
 
@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -138,9 +139,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'static'), ]  
 
-STATIC_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Default primary key field type
