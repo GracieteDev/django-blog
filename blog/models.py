@@ -19,14 +19,14 @@ class Post(models.Model):
     class Meta:
         ordering = ["-created_on"]
         
-    def soft_delete(self):
-        self.deleted = True
-        self.save()
+    #def soft_delete(self):
+    #   self.deleted = True
+    #   self.save()
 
-    def restore(self):
-        self.deleted = False
-        self.save()
-   
+    #def restore(self):
+    #    self.deleted = False
+    #    self.save()
+
 
     def __str__(self):
         return f"{self.title} | written by {self.author}"  

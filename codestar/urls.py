@@ -19,6 +19,7 @@ from django.urls import path, include
 
 
 urlpatterns = [
+    path("about/", include("about.urls"), name="about-urls"),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
     path("", include("blog.urls"), name='blog-urls'), # 'blog-urls' is the name of the URL pattern. This pattern tells Django to look in the blog app URL file for any blog urlpatterns.
