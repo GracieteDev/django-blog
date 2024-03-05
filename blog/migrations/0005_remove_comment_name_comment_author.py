@@ -9,14 +9,10 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('blog', '0004_alter_post_options_comment'),
+        ('blog', '0004_alter_comment_options_alter_optionspy'),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='comment',
-            name='name',
-        ),
         migrations.AddField(
             model_name='comment',
             name='author',
@@ -24,3 +20,4 @@ class Migration(migrations.Migration):
             preserve_default=False,
         ),
     ]
+    

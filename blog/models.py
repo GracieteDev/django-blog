@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -19,15 +20,7 @@ class Post(models.Model):
     class Meta:
         ordering = ["-created_on"]
         
-    #def soft_delete(self):
-    #   self.deleted = True
-    #   self.save()
-
-    #def restore(self):
-    #    self.deleted = False
-    #    self.save()
-
-
+        
     def __str__(self):
         return f"{self.title} | written by {self.author}"  
 
