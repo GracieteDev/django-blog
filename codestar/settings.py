@@ -32,7 +32,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  
+DEBUG = True  
 
 ALLOWED_HOSTS = ['localhost', 'vm5qkj1v-8000.uks1.devtunnels.ms', '*.herokuapp.com', '127.0.0.1', 'localhost:8000', 'api.elephantsql.com', 'django-blog-graciete-857dfa1c1f7a.herokuapp.com']
 
