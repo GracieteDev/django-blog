@@ -92,7 +92,7 @@ body {
 }
 
 .profile-image {
-  width: 75%;
+  width: 100%;
 }
 
 .post-link {
@@ -162,4 +162,30 @@ body {
 
 .approval {
   color: rgb(222, 146, 168);
+}
+
+/* Media queries for .profile-image */
+
+@media (min-width: 576px) {
+  .profile-image {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-image {
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-image {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profile-image {
+    width: 50%;
+  }
 }
