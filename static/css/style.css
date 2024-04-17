@@ -43,10 +43,3 @@ body {
   bottom: 5%;
 }
 
-.truncate {
-  display: block;
-  width: 250px; 
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
