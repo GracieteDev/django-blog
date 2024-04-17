@@ -8,7 +8,7 @@
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
                 <!-- Post title goes in these h1 tags -->
-                <h1 class="post-title">{{ post.title|truncatechars:50 }}</h1>
+                <h1 class="post-title">{{ post.title|truncatechars:40 }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
@@ -30,7 +30,7 @@
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
                 <article class="card-text">
-                    {{ post.content|truncatechars:1000|safe }}
+                    {{ post.content|truncatechars:500|safe }}
                 </article>
             </div>
         </div>
