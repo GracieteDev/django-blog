@@ -30,7 +30,7 @@
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
                 <article class="card-text">
-                    {{ post.content|truncatechars:500|safe }}
+                    {{ post.content|truncatechars:500 | safe }}
                 </article>
             </div>
         </div>
