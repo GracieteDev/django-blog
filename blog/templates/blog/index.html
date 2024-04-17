@@ -29,8 +29,8 @@
                 </div>
               </div>
               <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                <h2 class="card-title">{{ post.title |truncatechars:50 }}</h2>
-                <p class="card-text">{{ post.excerpt|truncatechars:100 }}</p>
+                <h2 class="card-title">{{ post.title |truncatechars:100 }}</h2>
+                <p class="card-text">{{ post.excerpt|truncatechars:300 }}</p>
               </a>
 
               <hr />
